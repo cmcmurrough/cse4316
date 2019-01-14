@@ -1,0 +1,138 @@
+%%% LaTeX Template: Article/Thesis/etc. with colored headings and special fonts
+%%%
+%%% Source: http://www.howtotex.com/
+%%% Feel free to distribute this template, but please keep to referal to http://www.howtotex.com/ here.
+%%% February 2011
+%%%
+%%% Modified May 2018 by CDM
+
+%%%  Preamble
+\documentclass[11pt,letterpaper]{article}
+\usepackage[margin=1.0in]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage[bitstream-charter]{mathdesign}
+\usepackage[latin1]{inputenc}					
+\usepackage{amsmath}						
+\usepackage{xcolor}
+\usepackage{cite}
+\usepackage{hyphenat}
+\usepackage{graphicx}
+\usepackage{float}
+\usepackage{subfigure}
+\usepackage{sectsty}
+\usepackage[compact]{titlesec} 
+\usepackage[tablegrid]{vhistory}
+\allsectionsfont{\color{accentcolor}\scshape\selectfont}
+
+%%% Definitions
+\definecolor{accentcolor}{rgb}{0.0,0.0,0.5} 
+\newcommand{\teamname}{Team Name}
+\newcommand{\productname}{Product Name}
+\newcommand{\coursename}{CSE 4316: Senior Design I}
+\newcommand{\semester}{Spring 2018}
+\newcommand{\docname}{System Requirements Specification}
+\newcommand{\department}{Department of Computer Science \& Engineering}
+\newcommand{\university}{The University of Texas at Arlington}
+\newcommand{\authors}{Alan Turing \\ Grace Hopper \\ John Von Neumann \\ Ada Lovelace \\ Charles Babbage}
+
+%%% Headers and footers
+\usepackage{fancyhdr}
+	\pagestyle{fancy}						% Enabling the custom headers/footers
+\usepackage{lastpage}	
+	% Header (empty)
+	\lhead{}
+	\chead{}
+	\rhead{}
+	% Footer
+	\lfoot{\footnotesize \teamname \ - \semester}
+	\cfoot{}
+	\rfoot{\footnotesize page \thepage\ of \pageref{LastPage}}	% "Page 1 of 2"
+	\renewcommand{\headrulewidth}{0.0pt}
+	\renewcommand{\footrulewidth}{0.4pt}
+
+%%% Change the abstract environment
+\usepackage[runin]{abstract}			% runin option for a run-in title
+%\setlength\absleftindent{30pt}			% left margin
+%\setlength\absrightindent{30pt}		% right margin
+\abslabeldelim{\quad}	
+\setlength{\abstitleskip}{-10pt}
+\renewcommand{\abstractname}{}
+\renewcommand{\abstracttextfont}{\color{accentcolor} \small \slshape}	% slanted text
+
+%%% Start of the document
+\begin{document}
+
+%%% Cover sheet
+{\centering \huge \color{accentcolor} \sc \textbf{\department \\ \university} \par}
+\vspace{1 in}
+{\centering \huge \color{accentcolor} \sc \textbf{\docname \\ \coursename \\ \semester} \par}
+\vspace{0.5 in}
+\begin{figure}[h!]
+	\centering
+   	\includegraphics[width=0.60\textwidth]{images/test_image}
+\end{figure}
+\vspace{0.5 in}
+{\centering \huge \color{accentcolor} \sc \textbf{\teamname \\ \productname} \par}
+\vspace{0.5 in}
+{\centering \large \sc \textbf{\authors} \par}
+\newpage
+
+
+%\vspace{1 in}
+%\centerline{January 13th, 2012}
+%\newpage
+
+%%% Revision History
+\begin{versionhistory}
+  	\vhEntry{0.1}{10.01.2015}{GH}{document creation}
+  	\vhEntry{0.2}{10.05.2015}{AT|GH}{complete draft}
+  	\vhEntry{0.3}{10.12.2015}{AT|GH}{release candidate 1}
+  	\vhEntry{1.0}{10.20.2015}{AT|GH|CB}{official release}
+  	\vhEntry{1.1}{10.31.2015}{AL}{added customer change requests}
+\end{versionhistory}
+\newpage
+
+%%% Table of contents
+\setcounter{tocdepth}{3}
+\tableofcontents
+\newpage
+
+%%% List of figures and tables (optional)
+\listoffigures
+%\listoftables
+\newpage
+
+\section{Product Concept}
+\input{tex/product_concept.tex}
+\newpage
+\section{Product Description}
+\input{tex/product_description.tex}
+\newpage
+\section{Customer Requirements}
+\input{tex/customer_requirements.tex}
+\newpage
+\section{Packaging Requirements}
+\input{tex/packaging_requirements.tex}
+\newpage
+\section{Performance Requirements}
+\input{tex/performance_requirements.tex}
+\newpage
+\section{Safety Requirements}
+\input{tex/safety_requirements.tex}
+\newpage
+\section{Maintenance \& Support Requirements}
+\input{tex/maintenance_support_requirements}
+\newpage
+\section{Other Requirements}
+\input{tex/other_requirements.tex}
+\newpage
+\section{Future Items}
+\input{tex/future_items}
+\newpage
+
+%%% References
+\bibliographystyle{plain}
+\bibliographystyle{reference/IEEEtran_custom}
+\bibliography{reference/refs}{}
+
+\end{document}

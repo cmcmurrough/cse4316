@@ -1,0 +1,41 @@
+sudo apt-get update
+sudo apt-get upgrade
+
+# INSTALL DEPENDENCIES
+sudo apt-get -y install build-essential cmake cmake-curses-gui pkg-config libpng12-0 libpng12-dev libpng++-dev libpng3 libpnglite-dev zlib1g-dbg zlib1g zlib1g-dev pngtools libtiff4-dev libtiff4 libtiffxx0c2 libtiff-tools libeigen3-dev libjpeg8 libjpeg8-dev libjpeg8-dbg libjpeg-progs ffmpeg libavcodec-dev libavcodec53 libavformat53 libavformat-dev libgstreamer0.10-0-dbg libgstreamer0.10-0 libgstreamer0.10-dev libxine1-ffmpeg libxine-dev libxine1-bin libunicap2 libunicap2-dev swig libv4l-0 libv4l-dev python-numpy libpython2.6 python-dev python2.6-dev libgtk2.0-dev 
+
+# DOWNLOAD OPENCV SOURCE
+cd ~
+wget http://downloads.sourceforge.net/project/opencvlibrary/opencv-unix/2.4.10/opencv-2.4.10.zip
+unzip opencv-2.4.10.zip
+cd opencv-2.4.10
+
+# DOWNLOAD TBB
+cd 3rdparty/tbb
+sudo wget http://www.threadingbuildingblocks.org/sites/default/files/software_releases/source/tbb41_20130116oss_src.tgz
+sudo tar -xvzf tbb41_20130116oss_src.tgz
+cd ../..
+
+# CONFIGURE OPENCV BUILD
+mkdir build
+cd build
+sudo cmake -D CMAKE_BUILD_TYPE=RELEASE -D WITH_TBB=ON -D BUILD_TBB=ON -D WITH_QT=OFF -D WITH_OPENGL=ON -D WITH_V4L=ON -D ENABLE_VFPV3=ON -D ENABLE_NEON=ON ..
+
+# BUILD AND INSTALL OPENCV
+sudo make -j4
+sudo make install
+
+# INSTALL TBB
+cd ~/opencv-2.4.10/build/3rdparty/tbb/tbb41_20130116oss/build
+sudo sh generate_tbbvars.sh
+
+sudo echo export TBB_INSTALL_DIR="~/opencv-2.4.10/build/3rdparty/tbb/tbb41_20130116oss" | sudo tee -a ~/opencv-2.4.10/build/3rdparty/tbb/tbb41_20130116oss/build/tbbvars.sh
+echo source ~/opencv-2.4.10/build/3rdparty/tbb/tbb41_20130116oss/build/tbbvars.sh >> .bashrc
+sudo cp -r ~/opencv-2.4.10/build/3rdparty/tbb/tbb41_20130116oss/include/tbb /usr/include
+sudo cp ~/opencv-2.4.10/build/lib/libtbb.so /usr/lib
+
+# INSTALL BOOST
+sudo apt-get install libboost-dev
+
+# ENABLE CAMERA
+sudo modprobe bcm2835-v4l2

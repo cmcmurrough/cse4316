@@ -1,0 +1,46 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Express 2013 for Windows Desktop
+VisualStudioVersion = 12.0.31101.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "teensy_serial_demo", "teensy_serial_demo\teensy_serial_demo.csproj", "{A06D460C-EA1B-4453-8FFD-BE7F2AE4E7F8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "teensy_servo_demo", "teensy_servo_demo\teensy_servo_demo.csproj", "{9FA42E2C-777E-4B83-976F-204335D2FE58}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "teensy_stepper_demo", "teensy_stepper_demo\teensy_stepper_demo.csproj", "{E7EC4555-F8BA-4724-8190-6850789365C1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "teensy_accelstepper_demo", "teensy_accelstepper_demo\teensy_accelstepper_demo.csproj", "{6B6A2E90-E247-4682-9A5A-8202C97DA0A9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "teensy_hbridge_demo", "teensy_hbridge_demo\teensy_hbridge_demo.csproj", "{44D95BF2-DB19-4359-ADF2-63355970C975}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x86 = Debug|x86
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A06D460C-EA1B-4453-8FFD-BE7F2AE4E7F8}.Debug|x86.ActiveCfg = Debug|x86
+		{A06D460C-EA1B-4453-8FFD-BE7F2AE4E7F8}.Debug|x86.Build.0 = Debug|x86
+		{A06D460C-EA1B-4453-8FFD-BE7F2AE4E7F8}.Release|x86.ActiveCfg = Release|x86
+		{A06D460C-EA1B-4453-8FFD-BE7F2AE4E7F8}.Release|x86.Build.0 = Release|x86
+		{9FA42E2C-777E-4B83-976F-204335D2FE58}.Debug|x86.ActiveCfg = Debug|x86
+		{9FA42E2C-777E-4B83-976F-204335D2FE58}.Debug|x86.Build.0 = Debug|x86
+		{9FA42E2C-777E-4B83-976F-204335D2FE58}.Release|x86.ActiveCfg = Release|x86
+		{9FA42E2C-777E-4B83-976F-204335D2FE58}.Release|x86.Build.0 = Release|x86
+		{E7EC4555-F8BA-4724-8190-6850789365C1}.Debug|x86.ActiveCfg = Debug|x86
+		{E7EC4555-F8BA-4724-8190-6850789365C1}.Debug|x86.Build.0 = Debug|x86
+		{E7EC4555-F8BA-4724-8190-6850789365C1}.Release|x86.ActiveCfg = Release|x86
+		{E7EC4555-F8BA-4724-8190-6850789365C1}.Release|x86.Build.0 = Release|x86
+		{6B6A2E90-E247-4682-9A5A-8202C97DA0A9}.Debug|x86.ActiveCfg = Debug|x86
+		{6B6A2E90-E247-4682-9A5A-8202C97DA0A9}.Debug|x86.Build.0 = Debug|x86
+		{6B6A2E90-E247-4682-9A5A-8202C97DA0A9}.Release|x86.ActiveCfg = Release|x86
+		{6B6A2E90-E247-4682-9A5A-8202C97DA0A9}.Release|x86.Build.0 = Release|x86
+		{44D95BF2-DB19-4359-ADF2-63355970C975}.Debug|x86.ActiveCfg = Debug|x86
+		{44D95BF2-DB19-4359-ADF2-63355970C975}.Debug|x86.Build.0 = Debug|x86
+		{44D95BF2-DB19-4359-ADF2-63355970C975}.Release|x86.ActiveCfg = Release|x86
+		{44D95BF2-DB19-4359-ADF2-63355970C975}.Release|x86.Build.0 = Release|x86
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

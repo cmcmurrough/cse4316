@@ -1,0 +1,66 @@
+---------------- METHOD 1: USING PREBUILD BINARIES ---------------
+
+http://www.raspberrypi.org/camera-board-available-for-sale/
+
+http://www.raspberrypi.org/forums/viewtopic.php?f=43&t=50639&start=100
+
+The latest release of the Raspbian Wheezy image has V4L2 drivers for the Camera Board. This means that you can use V4L2 Video Capture block to capture images from the Raspberry Pi Camera Board. To enable this, first upgrade your Raspbian:
+
+sudo apt-get update 
+sudo apt-get dist-upgrade 
+sudo rpi-update 
+sudo reboot 
+
+After reboot, execute the following command to load the V4L2 driver for the Raspberry Pi Camera:
+
+sudo modprobe bcm2835-v4l2
+
+After this step, you should see a /dev/video0 device (check by "ls -al /dev/vid*") that corresponds to the Camera Board. Now use the V4L2 Video Capture Block to capture images from this video device.
+
+
+---------------- METHOD 2: BUILDING V4L-UTILITIES ---------------
+
+http://www.ics.com/blog/raspberry-pi-camera-module
+
+    # Get the latest Raspbian packages
+    sudo apt-get update
+    sudo apt-get upgrade
+
+    # Get the latest firmware
+    sudo rpi-update
+
+    # Get the source code for the V4L utilities
+    git clone git://git.linuxtv.org/v4l-utils.git
+    cd v4l-utils
+
+    # Install some packages needed to build it
+    sudo apt-get install autoconf gettext libtool libjpeg62-dev
+
+    # Configure and build it.
+    ./bootstrap.sh
+    ./configure
+    make
+    sudo make install
+
+Building the software should take about fifteen minutes. You need to have the camera enabled and sufficient Graphics Processing Unit (GPU) memory configured. Here are some example commands to get started:
+
+    # Load the module
+    sudo modprobe bcm2835-v4l2
+
+    # Control the viewfinder
+    v4l2-ctl --overlay=1 # enable viewfinder
+    v4l2-ctl --overlay=0 # disable viewfinder
+
+    # Record a video
+    v4l2-ctl --set-fmt-video=width=1920,height=1088,pixelformat=4
+    v4l2-ctl --stream-mmap=3 --stream-count=100 --stream-to=somefile.264
+
+    # Capture a JPEG image
+    v4l2-ctl --set-fmt-video=width=2592,height=1944,pixelformat=3
+    v4l2-ctl --stream-mmap=3 --stream-count=1 --stream-to=somefile.jpg
+
+    # Set the video bitrate
+    v4l2-ctl --set-ctrl video_bitrate=10000000
+
+    # List the supported formats
+    v4l2-ctl --list-formats

@@ -5,19 +5,25 @@ Example of simple RESTful server API written using the express Node.js framework
 
 Simple test clients in python and pure bash scripting using cURL are provided.
 
-dependencies: nodejs, express, body-parser
+### REST server example (Node.js)
 
-installation:
-
+install dependencies
+```
 sudo apt-get install nodejs npm
-npm install express body-parser
-
-running server:
+npm install express
+```
+Run the server
+```
 node server.js
+```
 
-running python client:
+### Client example (python)
+Run the python client
+```
 python3 client.py
-
-running bash example:
-sh client.sh
-
+```
+### Client example (bash)
+Run the bash client
+```
+python3 client.py
+```

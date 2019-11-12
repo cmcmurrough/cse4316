@@ -7,6 +7,7 @@ app.use(express.urlencoded({ extended: true })) // for parsing application/x-www
 
 // define the default error handler
 app.use (function (error, request, response, next){
+    console.error("WARNING: error detected...")
     console.error(error.stack)
     response.status(500).send("Error handling request: " + error.message)
 });

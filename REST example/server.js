@@ -1,37 +1,57 @@
-// import HTTP module
-var http = require('http');
+const express = require('express')
+const app = express()
+const port = 3000
 
-// define the listening port
-const PORT=8080;
+app.use(express.json()) // for parsing application/json
+app.use(express.urlencoded({ extended: true })) // for parsing application/x-www-form-urlencoded
 
-// define a function to handle requests and send a response
-function handleRequest(request, response)
-{
-	// handle all of the chunks of incoming data
-	console.log('Receiving message...')
-	var body = [];
-	request.on('data', function(chunk) {
-  	body.push(chunk);
-	}).on('end', function() {
-		// assemble the entire message from all of the received chunks
-  	body = Buffer.concat(body).toString();
-		console.log(body)
+// define the default error handler
+app.use (function (error, request, response, next){
+    console.error(error.stack)
+    response.status(500).send("Error handling request: " + error.message)
+});
 
-		// send message response
-		response.end('Responding to request at path: ' + request.url);
-		console.log('Response sent');
-	});
-}
+// handler for a receved HTTP GET request
+app.get('/', (request, response) => {
+    console.log('request body:', request.body);
+    return response.send('Received a GET HTTP request');
+});
 
-// define a function to handle server launch
-function serverStart()
-{
-	// callback triggered when server is successfully listening
-	console.log("Server listening on: http://localhost:%s", PORT);
-}
+// handler for a receved HTTP POST request
+app.post('/', (request, response) => {
+    console.log('request body:', request.body);
+    return response.send('Received a POST HTTP request');
+});
 
-// create a server
-var server = http.createServer(handleRequest);
+// handler for a receved HTTP POST request at endpoint /json
+app.post('/json', (request, response) => {
+    console.log('request body:', request.body);
+    // echo back the received JSON data
+    response.json(request.body)
+});
 
-// start the server
-server.listen(PORT, serverStart);
+// handler for a receved HTTP GET request at endpoint /json
+app.get('/json', (request, response) => {
+    console.log('request body:', request.body);
+    // create a JSON message to send
+    data = {timestamp: Date.now(), message: "Hello world!" }
+    response.json(data)
+});
+
+// handler for a receved HTTP PUT request
+app.put('/', (request, response) => {
+    console.log('request body:', request.body)
+    return response.send('Received a PUT HTTP request');
+});
+
+// handler for a receved HTTP DELETE request
+app.delete('/', (request, response) => {
+    console.log('request body:', request.body)
+    return response.send('Received a DELETE HTTP request');
+});
+
+// handler for application start
+app.listen(port, () =>
+    console.log("Example app listening on port " + port)
+);
+

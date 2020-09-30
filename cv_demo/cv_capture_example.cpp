@@ -85,14 +85,14 @@ int main(int argc, char **argv)
     }
 
     // get the video source parameters
-    int captureWidth = static_cast<int>(capture.get(CV_CAP_PROP_FRAME_WIDTH));
-    int captureHeight = static_cast<int>(capture.get(CV_CAP_PROP_FRAME_HEIGHT));
+    int captureWidth = static_cast<int>(capture.get(cv::CAP_PROP_FRAME_WIDTH));
+    int captureHeight = static_cast<int>(capture.get(cv::CAP_PROP_FRAME_HEIGHT));
     std::printf("Video source opened successfully (width=%d height=%d)! \n", captureWidth, captureHeight);
 
     // create the debug image windows
     if(showFrames)
     {
-        cv::namedWindow(DISPLAY_WINDOW_NAME, CV_WINDOW_AUTOSIZE);
+        cv::namedWindow(DISPLAY_WINDOW_NAME, cv::WINDOW_AUTOSIZE);
     }
 
     // process data until program termination

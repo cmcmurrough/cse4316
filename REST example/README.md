@@ -25,5 +25,5 @@ python3 client.py
 ### Client example (bash)
 Run the bash client
 ```
-python3 client.py
+sh client.sh
 ```

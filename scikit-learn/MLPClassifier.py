@@ -42,7 +42,7 @@ X_train = scaler.transform(X_train)
 X_test = scaler.transform(X_test)
 
 # perform the training
-model = MLPClassifier(hidden_layer_sizes=(10, 20, 10), max_iter=5000, alpha=0.0001, solver='lbfgs', verbose=10, random_state=1)
+model = MLPClassifier(hidden_layer_sizes=(20, 10), max_iter=5000, alpha=0.0001, solver='lbfgs', verbose=10, random_state=1)
 model.fit(X_train, y_train)
 
 # compute testing results

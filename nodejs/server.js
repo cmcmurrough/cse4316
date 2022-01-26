@@ -11,10 +11,10 @@ function handleRequest(request, response)
 	console.log('Receiving message...')
 	var body = [];
 	request.on('data', function(chunk) {
-  	body.push(chunk);
+  	    body.push(chunk);
 	}).on('end', function() {
 		// assemble the entire message from all of the received chunks
-  	body = Buffer.concat(body).toString();
+  	    body = Buffer.concat(body).toString();
 		console.log(body)
 
 		// send message response

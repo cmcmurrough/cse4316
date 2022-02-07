@@ -74,7 +74,7 @@ function childHandleClose(code)
 var spawn = require('child_process').spawn;
 
 // spawn the child process
-var child_command = "ifconfig";
+var child_command = "ipconfig";
 var child = spawn(child_command);
 console.log("Child process launched with process ID %d \n", child.pid);
 

@@ -1,0 +1,23 @@
+Connecting to RTK2GO from mission planner...
+
+DEPRECATED - will not work after November 2022
+http://rtk2go.com:2101/ARLINGTON-76017
+http://rtk2go.com:2101/ARLINGTON_76010
+
+PROPER FORMAT: user:password@host:port/mountport
+user - a valid email address
+password - the string "none"
+host - rtk2go.com
+port - 2101
+mountpoint - name of the NTRIP caster you with to connect to
+
+WORKING EXAMPLES:
+http://email@domain.com:none@rtk2go.com:2101/ARLINGTON-76017
+http://email@domain.com:none@rtk2go.com:2101/ARLINGTON_76010
+
+TO CHECK BASE STATION STATUS:
+http://rtk2go.com:2101/SNIP::MOUNTPT?baseName=ARLINGTON-76017
+http://rtk2go.com:2101/SNIP::MOUNTPT?baseName=ARLINGTON_76010
+
+TO VIEW OTHER RTK2GO ACTIVE STREAMS:
+http://new.rtk2go.com:2101/SNIP::STATUS

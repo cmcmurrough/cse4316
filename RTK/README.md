@@ -6,11 +6,11 @@ The UTA RTK base station broadcasts RTCM correction data using RTK2GO.com. An NT
 user:password@host:port/mountport
 
 ## NTRIP connection fields
-###user - a valid email address (your email address)
-###password - the string "none"
-###host - rtk2go.com
-###port - 2101
-###mountpoint - name of the NTRIP caster you with to connect to
+### user - a valid email address (your email address)
+### password - the string "none"
+### host - rtk2go.com
+### port - 2101
+### mountpoint - name of the NTRIP caster you with to connect to
 
 In the case of the UTA RTK base station mounted on the roof of Nedderman Hall, the mountpoint is "ARLINGTON_76010". Thus, the proper connection string is:
 

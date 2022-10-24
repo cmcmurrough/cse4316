@@ -28,7 +28,7 @@ navigate to SETUP > Optional Hardware > RTK/GPS Inject
 
 ![Mission Planner NTRIP setup](https://github.com/cmcmurrough/cse4316/blob/master/RTK/mission_planner_NTRIP_setup.png?raw=true)
 
-Select "NTRIP" and click "Connect". Enter the connection string in the popup.
+Select "NTRIP" and click "Connect". Enter the connection string in the popup after replacing the email address with your own.
 
 ![Mission Planner connection](https://github.com/cmcmurrough/cse4316/blob/master/RTK/mission_planner_connection.png?raw=true)
 

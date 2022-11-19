@@ -89,8 +89,10 @@ RFD900x-US Telemetry radio set (QTY 1)
 [Zip ties 2.5mm](https://a.co/d/6hFeIbc) (QTY 1)
 
 ## 3D Printed Parts
-[S500/550 CubeOrange Vibration Mount - Top](https://github.com/cmcmurrough/cse4316/blob/master/drones/S550%20CubeOrange%20vibration%20mount%20-%20TOP.stl) (QTY 1)
+S500/550 CubeOrange Vibration Mount (QTY 1)
 
-[S500/550 CubeOrange Vibration Mount - Bottom](https://github.com/cmcmurrough/cse4316/blob/master/drones/S550%20CubeOrange%20vibration%20mount%20-%20BOTTOM.stl) (QTY 1)
+S500/550 CubeOrange Vibration Mount (QTY 1)
 
-[Here 3 Straddle Mount](https://github.com/cmcmurrough/cse4316/blob/master/drones/Here3%20straddle%20mount.stl) (QTY 1)
+Here 3 Straddle Mount (QTY 1)
+
+*Note: 3D printed parts can be found in the repository

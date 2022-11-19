@@ -29,7 +29,9 @@ The following BoM contains all of the parts necessary to construct a fully funct
 ## Flight controller, RTK GPS, Telemetry radio components
 
 Cube Orange Flight Controller (QTY 1)
+
 Here3+ RTK GPS (QTY 1)
+
 RFD900x-US Telemetry radio set (QTY 1)
 
 [Combo pack with all of the above](https://irlock.com/collections/combos/products/cube-orange-w-here3-rfd900x-us-telemetry-set) (QTY 1)
@@ -90,4 +92,5 @@ RFD900x-US Telemetry radio set (QTY 1)
 [S500/550 CubeOrange Vibration Mount - Top](https://github.com/cmcmurrough/cse4316/blob/master/drones/S550%20CubeOrange%20vibration%20mount%20-%20TOP.stl) (QTY 1)
 
 [S500/550 CubeOrange Vibration Mount - Bottom](https://github.com/cmcmurrough/cse4316/blob/master/drones/S550%20CubeOrange%20vibration%20mount%20-%20BOTTOM.stl) (QTY 1)
+
 [Here 3 Straddle Mount](https://github.com/cmcmurrough/cse4316/blob/master/drones/Here3%20straddle%20mount.stl) (QTY 1)

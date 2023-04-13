@@ -1,0 +1,19 @@
+C:\!DaneBG\Sieci\Slmp\SimpleSlmpDll\SimpleLibrarySlmpFx5\SimpleLibrarySlmpFx5\bin\Release\SimpleLibrarySlmpFx5.exe.config
+C:\!DaneBG\Sieci\Slmp\SimpleSlmpDll\SimpleLibrarySlmpFx5\SimpleLibrarySlmpFx5\bin\Release\SimpleLibrarySlmpFx5.exe
+C:\!DaneBG\Sieci\Slmp\SimpleSlmpDll\SimpleLibrarySlmpFx5\SimpleLibrarySlmpFx5\bin\Release\SimpleLibrarySlmpFx5.pdb
+C:\!DaneBG\Sieci\Slmp\SimpleSlmpDll\SimpleLibrarySlmpFx5\SimpleLibrarySlmpFx5\bin\Release\SimpleLibSlmpFx5.dll
+C:\!DaneBG\Sieci\Slmp\SimpleSlmpDll\SimpleLibrarySlmpFx5\SimpleLibrarySlmpFx5\bin\Release\SLMP_EDC_LIB.dll
+C:\!DaneBG\Sieci\Slmp\SimpleSlmpDll\SimpleLibrarySlmpFx5\SimpleLibrarySlmpFx5\bin\Release\SimpleLibSlmpFx5.pdb
+C:\!DaneBG\Sieci\Slmp\SimpleSlmpDll\SimpleLibrarySlmpFx5\SimpleLibrarySlmpFx5\obj\Release\SimpleLibrarySlmpFx5.csprojResolveAssemblyReference.cache
+C:\!DaneBG\Sieci\Slmp\SimpleSlmpDll\SimpleLibrarySlmpFx5\SimpleLibrarySlmpFx5\obj\Release\SimpleLibrarySlmpFx5.exe
+C:\!DaneBG\Sieci\Slmp\SimpleSlmpDll\SimpleLibrarySlmpFx5\SimpleLibrarySlmpFx5\obj\Release\SimpleLibrarySlmpFx5.pdb
+C:\Users\murr\Documents\GitHub\cse4316\mitsubishi PLC\SimpleLibrarySlmpFx5\SimpleLibrarySlmpFx5\bin\Release\SimpleLibrarySlmpFx5.exe.config
+C:\Users\murr\Documents\GitHub\cse4316\mitsubishi PLC\SimpleLibrarySlmpFx5\SimpleLibrarySlmpFx5\bin\Release\SimpleLibrarySlmpFx5.exe
+C:\Users\murr\Documents\GitHub\cse4316\mitsubishi PLC\SimpleLibrarySlmpFx5\SimpleLibrarySlmpFx5\bin\Release\SimpleLibrarySlmpFx5.pdb
+C:\Users\murr\Documents\GitHub\cse4316\mitsubishi PLC\SimpleLibrarySlmpFx5\SimpleLibrarySlmpFx5\bin\Release\SimpleLibSlmpFx5.pdb
+C:\Users\murr\Documents\GitHub\cse4316\mitsubishi PLC\SimpleLibrarySlmpFx5\SimpleLibrarySlmpFx5\obj\Release\SimpleLibrarySlmpFx5.csproj.AssemblyReference.cache
+C:\Users\murr\Documents\GitHub\cse4316\mitsubishi PLC\SimpleLibrarySlmpFx5\SimpleLibrarySlmpFx5\obj\Release\SimpleLibrarySlmpFx5.csproj.SuggestedBindingRedirects.cache
+C:\Users\murr\Documents\GitHub\cse4316\mitsubishi PLC\SimpleLibrarySlmpFx5\SimpleLibrarySlmpFx5\obj\Release\SimpleLibrarySlmpFx5.csproj.CoreCompileInputs.cache
+C:\Users\murr\Documents\GitHub\cse4316\mitsubishi PLC\SimpleLibrarySlmpFx5\SimpleLibrarySlmpFx5\obj\Release\SimpleLibrarySlmpFx5.csproj.CopyComplete
+C:\Users\murr\Documents\GitHub\cse4316\mitsubishi PLC\SimpleLibrarySlmpFx5\SimpleLibrarySlmpFx5\obj\Release\SimpleLibrarySlmpFx5.exe
+C:\Users\murr\Documents\GitHub\cse4316\mitsubishi PLC\SimpleLibrarySlmpFx5\SimpleLibrarySlmpFx5\obj\Release\SimpleLibrarySlmpFx5.pdb

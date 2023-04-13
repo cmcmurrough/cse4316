@@ -1,0 +1,9 @@
+C:\!DaneBG\Sieci\Slmp\SimpleSlmpDll\SimpleLibrarySlmpFx5\SimpleLibrarySlmpFx5\bin\Debug\SimpleLibrarySlmpFx5.exe.config
+C:\!DaneBG\Sieci\Slmp\SimpleSlmpDll\SimpleLibrarySlmpFx5\SimpleLibrarySlmpFx5\obj\Debug\SimpleLibrarySlmpFx5.csprojResolveAssemblyReference.cache
+C:\!DaneBG\Sieci\Slmp\SimpleSlmpDll\SimpleLibrarySlmpFx5\SimpleLibrarySlmpFx5\bin\Debug\SimpleLibrarySlmpFx5.exe
+C:\!DaneBG\Sieci\Slmp\SimpleSlmpDll\SimpleLibrarySlmpFx5\SimpleLibrarySlmpFx5\bin\Debug\SimpleLibrarySlmpFx5.pdb
+C:\!DaneBG\Sieci\Slmp\SimpleSlmpDll\SimpleLibrarySlmpFx5\SimpleLibrarySlmpFx5\bin\Debug\SimpleLibSlmpFx5.dll
+C:\!DaneBG\Sieci\Slmp\SimpleSlmpDll\SimpleLibrarySlmpFx5\SimpleLibrarySlmpFx5\bin\Debug\SLMP_EDC_LIB.dll
+C:\!DaneBG\Sieci\Slmp\SimpleSlmpDll\SimpleLibrarySlmpFx5\SimpleLibrarySlmpFx5\bin\Debug\SimpleLibSlmpFx5.pdb
+C:\!DaneBG\Sieci\Slmp\SimpleSlmpDll\SimpleLibrarySlmpFx5\SimpleLibrarySlmpFx5\obj\Debug\SimpleLibrarySlmpFx5.exe
+C:\!DaneBG\Sieci\Slmp\SimpleSlmpDll\SimpleLibrarySlmpFx5\SimpleLibrarySlmpFx5\obj\Debug\SimpleLibrarySlmpFx5.pdb
